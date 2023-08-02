@@ -18,9 +18,9 @@ class vm {
         std::size_t memsize;
         // output IO PORT, default stderr
         FILE *outputFile;
-        // input File, where the commands come from, default stdin
+        // input File, where the commands come from, must be set by user
         FILE *inputFile;
-        // INPUT IO PORT, must be set by user
+        // INPUT IO PORT, default stdin
         FILE *input;
         // used to track '[]' correspondance
         std::stack<std::size_t> loopStack;

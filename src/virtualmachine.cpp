@@ -158,7 +158,13 @@ int vm::run() {
             case ']':
                 jumpNZ();
                 break;
+            case ' ':
+            case '\t':
+            case '\n':
+            case '\r':
+                break;
             default:
+                fprintf(stderr, "Error: invalid character %c\n", (char) pc);
                 break;
         }
     }
