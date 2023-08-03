@@ -66,7 +66,7 @@ void vm::shiftright() {
 void vm::shiftleft() {
     // first check if memory allow
     if (this->current == this->memory) {
-        fprintf(stderr, "Error: pointer out of range\n");
+        fprintf(stderr, "Error: pointer out of range at %ld\n", ftell(this->inputFile));
         exit(1);
     }
     // move the pointer to left

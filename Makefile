@@ -8,8 +8,8 @@ BIN=brainfxxk
 
 all: build
 
-build: ${SRCDIR}/driver.cpp ${SRCDIR}/virtualmachine.cpp
-	${CXX} ${CXX_FLAGS} -o ${BIN} ${SRCDIR}/driver.cpp ${SRCDIR}/virtualmachine.cpp
+build: ${SRCDIR}/driver.cpp ${SRCDIR}/virtualmachine.cpp ${SRCDIR}/transformer.cpp
+	${CXX} ${CXX_FLAGS} -o ${BIN} ${SRCDIR}/driver.cpp ${SRCDIR}/virtualmachine.cpp ${SRCDIR}/transformer.cpp
 
 clean:
 	@rm ${BIN}

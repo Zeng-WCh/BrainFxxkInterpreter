@@ -1,7 +1,7 @@
 #ifndef __VRITUALMACHINE__
 #define __VRITUALMACHINE__
 
-#include <cstddef>
+#include <ctype.h>
 #include <cstdio>
 #include <stack>
 #include <vector>

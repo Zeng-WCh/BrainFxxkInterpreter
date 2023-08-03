@@ -22,4 +22,4 @@ This implement use C++ as it backend.
 
 # This project
 
-We take the input from standard input and execute it interpretly.
+We take the input from a file and execute it interpretly.
